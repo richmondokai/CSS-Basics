@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power House Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #F4F4F4;
+            --dark-color: #333;
+            --light-color: #fff;
+            --gradient: linear-gradient(135deg, #007BFF, #00D4FF);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--gradient);
+            margin: 0;
+            color: var(--dark-color);
+            text-align: center;
+        }
+
+        header {
+            padding: 1.5rem 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: var(--light-color);
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--light-color);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+        }
+
+        .semi-transparent {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 3rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: var(--light-color);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
+        }
+
+        button:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            border: 2px solid #0056b3;
+        }
+
+        .notification {
+            position: relative;
+            display: inline-block;
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -10px;
+            right: -30px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            padding: 1.5rem 0;
+            background: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Power House Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#investors">Investors</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="notification">
+                    <a href="#notifications">Notifications</a>
+                    <span class="notification-badge">3</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to Power House Solutions</h2>
+        <p>We provide cutting-edge solutions to streamline your business communication.</p>
+        <button>Learn More</button>
+    </section>
+
+    <section class="semi-transparent">
+        <h2>Our Vision</h2>
+        <p>Empowering businesses with seamless customer service and advanced technology.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <span>&copy; 2025 Power House Solutions. All Rights Reserved.</span>
+        <span>Contact us: <a href="mailto:okai@automatedpros.io">okai@automatedpros.io</a></span>
+        <span>Phone: +233 50 159 0288</span>
+    </footer>
+</body>
+</html>
