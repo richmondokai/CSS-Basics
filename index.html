@@ -101,18 +101,21 @@
         }
 
         .notification {
-            position: relative;
+            position: fixed;
+            top: 20px;
+            right: 30px;
             display: inline-block;
+            z-index: 999;
         }
 
         .notification-badge {
             position: absolute;
             top: -10px;
-            right: -30px;
+            right: -10px;
             background: red;
             color: white;
             border-radius: 50%;
-            padding: 5px 10px;
+            padding: 1px 6px;
             font-size: 0.8rem;
         }
 
@@ -125,48 +128,49 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Power House Solutions</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#partners">Partners</a></li>
-                <li><a href="#investors">Investors</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="notification">
-                    <a href="#notifications">Notifications</a>
-                    <span class="notification-badge">3</span>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Power House Solutions</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#investors">Investors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section>
-        <h2>Welcome to Power House Solutions</h2>
-        <p>We provide cutting-edge solutions to streamline your business communication.</p>
-        <button>Learn More</button>
-    </section>
+<div class="notification">
+    <a href="#notifications">🔔</a>
+    <span class="notification-badge">3</span>
+</div>
 
-    <section class="semi-transparent">
-        <h2>Our Vision</h2>
-        <p>Empowering businesses with seamless customer service and advanced technology.</p>
-    </section>
+<section>
+    <h2>Welcome to Power House Solutions</h2>
+    <p>We provide cutting-edge solutions to streamline your business communication.</p>
+    <button>Learn More</button>
+</section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+<section class="semi-transparent">
+    <h2>Our Vision</h2>
+    <p>Empowering businesses with seamless customer service and advanced technology.</p>
+</section>
 
-    <footer>
-        <span>&copy; 2025 Power House Solutions. All Rights Reserved.</span>
-        <span>Contact us: <a href="mailto:okai@automatedpros.io">okai@automatedpros.io</a></span>
-        <span>Phone: +233 50 159 0288</span>
-    </footer>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <span>&copy; 2025 Power House Solutions. All Rights Reserved.</span>
+    <span>Contact us: <a href="mailto:okai@automatedpros.io">okai@automatedpros.io</a></span>
+    <span>Phone: +233 50 159 0288</span>
+</footer>
 </body>
 </html>
