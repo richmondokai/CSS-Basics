@@ -16,10 +16,13 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: var(--gradient);
+            background: url('https://img.freepik.com/free-photo/dark-blue-product-background_53876-92801.jpg?t=st=1741352476~exp=1741356076~hmac=d07c7b2837d9ffe8a751f89d6312d2a8ccfd002f005eda1c674c38dabbb70d23&w=1800') no-repeat center center fixed;
+            background-size: cover;
             margin: 0;
             color: var(--dark-color);
             text-align: center;
+            letter-spacing: 2px;
+            line-height: 2;
         }
 
         header {
@@ -28,6 +31,7 @@
             color: var(--light-color);
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
         }
 
         nav ul {
@@ -56,18 +60,24 @@
             padding: 4rem 2rem;
             margin: 2rem auto;
             max-width: 900px;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.9) url('https://images.freeimages.com/images/large-previews/c1e/cracked-earth-abstract-texture-0410-5697629.jpg?fmt=webp&h=350') no-repeat center center;
+            background-size: cover;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             border-radius: 20px;
+            letter-spacing: 0.7px;
+            line-height: 3;
         }
 
         .semi-transparent {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.7) url('https://img.freepik.com/free-photo/psychedelic-paper-shapes-with-copy-space_23-2149378246.jpg?t=st=1741352363~exp=1741355963~hmac=20cb4ac498bf49806281ec1886e68eb8f295e02ce00c61165791f006044f93a7&w=2000') no-repeat center center;
+            background-size: cover;
             padding: 3rem;
             margin: 2rem auto;
             max-width: 800px;
             border-radius: 20px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            line-height: 2;
         }
 
         button {
@@ -93,11 +103,24 @@
             border: 2px solid var(--primary-color);
             border-radius: 10px;
             outline: none;
-            transition: border 0.3s ease;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+            letter-spacing: 0.8px;
+            line-height: 1.2;
         }
 
         form input:focus, form textarea:focus {
-            border: 2px solid #0056b3;
+            border: 2px dashed #0056b3;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+        }
+
+        form input[type="email"] {
+            border: 2px dotted var(--primary-color);
+        }
+
+        form textarea {
+            border: 2px double var(--primary-color);
+            resize: none;
+            height: 150px;
         }
 
         .notification {
@@ -106,17 +129,33 @@
             right: 30px;
             display: inline-block;
             z-index: 999;
+            font-size: 2rem;
+        }
+
+        .notification a {
+            text-decoration: none;
+            color: var(--dark-color);
+            position: relative;
+            display: inline-block;
         }
 
         .notification-badge {
             position: absolute;
-            top: -10px;
-            right: -10px;
+            top: 10px;
+            right: 10px;
             background: red;
             color: white;
             border-radius: 50%;
-            padding: 1px 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.1rem;
+            min-width: 1.5rem;
+            height: 1.5rem;
             font-size: 0.8rem;
+            font-weight: bold;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            transform: translate(50%, -50%);
         }
 
         footer {
@@ -124,6 +163,8 @@
             background: var(--dark-color);
             color: var(--light-color);
             text-align: center;
+            letter-spacing: 1.3px;
+            line-height: 5;
         }
     </style>
 </head>
@@ -143,7 +184,7 @@
 
 <div class="notification">
     <a href="#notifications">🔔</a>
-    <span class="notification-badge">3</span>
+    <span class="notification-badge">8</span>
 </div>
 
 <section>
